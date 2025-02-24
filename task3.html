@@ -6,17 +6,29 @@
     <title>Document</title>
     <style>
         body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
             height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(26, 70, 55);
         }
     </style>
+
 </head>
 <body >
+    <div style="background-color: rgb(165, 127, 200); width: 30%; align-items: center; display: flex; justify-content: center;border-radius: 10px; padding: 10px;">
     <form>
-        <div style="align-items: center;">
-        <div class="mb-3 row">
+    <h2>Registration Form</h2>
+    <div class="row mb-3" >
+        <label for="formGroupExampleInput"  class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Your Name">
+          </div>
+
+      </div>
+
+
+        <div class="row mb-3">
             <label for="staticEmail" class="col-sm-2 col-form-label">Name</label>
             <div class="col-sm-10">
               <input type="text" readonly class="form-control-plaintext" id="staticEmail">
@@ -51,10 +63,14 @@
         <option selected>Country</option>
         <option value="1">India</option>
         <option value="2">USA</option>
-      </select>
-    </div>
+      </select><br>
     <button type="button" class="btn btn-primary" style="margin-top: 10px;">Submit</button>
 </div>
     </form>
+    </div>
+
+
+
+  
 </body>
 </html>
